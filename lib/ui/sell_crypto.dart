@@ -62,8 +62,18 @@ class _SellCryptoState extends State<SellCrypto> {
               makeInVisible();
               makeInVisible2();
             },
-            items: <String>['bitcoin', 'ethereum', 'tether', 'dogecoin']
-                .map<DropdownMenuItem<String>>((String value) {
+            items: <String>[
+              'bitcoin',
+              'ethereum',
+              'tether',
+              'dogecoin',
+              'binancecoin',
+              'polkadot',
+              'litecoin',
+              'cardano',
+              'stellar',
+              'chainlink',
+            ].map<DropdownMenuItem<String>>((String value) {
               return DropdownMenuItem<String>(
                 value: value,
                 child: Text(value),

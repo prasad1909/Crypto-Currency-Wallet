@@ -32,9 +32,20 @@ class _AddCryptoState extends State<AddCrypto> {
               setState(() {
                 dropdownValue = newValue;
               });
+              print(dropdownValue);
             },
-            items: <String>['bitcoin', 'ethereum', 'tether', 'dogecoin']
-                .map<DropdownMenuItem<String>>((String value) {
+            items: <String>[
+              'bitcoin',
+              'stellar',
+              'chainlink',
+              'ethereum',
+              'tether',
+              'dogecoin',
+              'binancecoin',
+              'polkadot',
+              'litecoin',
+              'cardano',
+            ].map<DropdownMenuItem<String>>((String value) {
               return DropdownMenuItem<String>(
                 value: value,
                 child: Text(value),
